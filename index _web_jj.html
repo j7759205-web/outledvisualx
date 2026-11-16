@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiles_web_jj.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <img src="visualx.png" alt="Logo" class="img">
+        <p class="color_nombre_outled">OUTLET VISUALX</p>
+        <p class="color_whatsapp">Whatsapp</p>
+    </header>
+
+    <main>
+
+        <div id="login" hidden>
+            <h2>Entrada del administrador</h2>
+            <input type="email" id="email" placeholder="Correo">
+            <input type="password" id="password" placeholder="Clave">
+            <button id="entrar">Entrar</button>
+        </div>
+
+        <div id="panel" hidden>
+            <button id="salir">Cerrar sesión</button>
+            <br>
+            <input type="file" id="archivo" accept="image/*">
+            <br>
+            <textarea id="descripcion" placeholder="Descripción del producto"></textarea>
+            <br>
+            <input type="number" id="precio" placeholder="Precio" min="0">
+            <br>
+            <button id="subir">Subir producto</button>
+        </div>
+
+        <h2>Catálogo</h2>
+        <div id="lista"></div>
+
+    </main>
+
+    <footer>
+    </footer>
+    <div id="visor" hidden>
+        <button id="cerrar-visor" aria-label="Cerrar">✕</button>
+        <img id="visor-img" alt="">
+    </div>
+    <script src="script_web_jj.js"></script>
+</body>
+</html>
